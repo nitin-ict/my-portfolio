@@ -21,10 +21,14 @@
             color: #fff;
             padding: 1rem 0;
             text-align: center;
+            position: sticky; /* Menu stays at top */
+            top: 0;
+            z-index: 1000;
         }
         nav ul {
             padding: 0;
             list-style: none;
+            margin: 0;
         }
         nav ul li {
             display: inline;
@@ -32,21 +36,33 @@
         }
         nav a:hover { color: #f39c12; }
 
-        /* Hero Section */
+        /* Hero Section (Header) */
         header {
             background: linear-gradient(135deg, #1e90ff, #2ed573);
             color: white;
-            padding: 100px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
+        
+        /* Profile Photo Style */
+        .profile-photo {
+            width: 160px;       /* Width of photo */
+            height: 160px;      /* Height of photo */
+            border-radius: 50%; /* Makes it round */
+            border: 5px solid white; /* White border */
+            object-fit: cover;  /* Ensures photo doesn't stretch */
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
         header h1 {
             margin: 0;
-            font-size: 3rem;
+            font-size: 2.5rem;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
         header p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             margin-top: 10px;
             font-weight: 300;
         }
@@ -67,6 +83,7 @@
             color: #2c3e50;
             border-left: 5px solid #1e90ff;
             padding-left: 15px;
+            margin-bottom: 20px;
         }
 
         /* Skills Grid */
@@ -82,6 +99,22 @@
             border-radius: 8px;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Resume Section Styles */
+        .resume-container {
+            text-align: center;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .resume-img {
+            width: 100%;
+            max-width: 800px; /* Limits width so it's not too big on PC */
+            height: auto;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         /* Contact Button */
@@ -113,11 +146,13 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#resume">Resume</a></li> <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <header id="home">
+        <img src="nitin.jpg" alt="Nitin Kumar Kulkhandiya" class="profile-photo">
+        
         <h1>Nitin Kumar Kulkhandiya</h1>
         <p>ICT Lab Instructor | Tech Educator | Digital Creator</p>
     </header>
@@ -160,6 +195,15 @@
             </div>
         </section>
 
+        <section id="resume">
+            <h2>My Resume</h2>
+            <p style="text-align: center; margin-bottom: 20px;">Here is my detailed professional resume.</p>
+            <div class="resume-container">
+                <img src="resume-page-1.jpg" alt="Nitin Resume Page 1" class="resume-img">
+                
+                <img src="resume-page-2.jpg" alt="Nitin Resume Page 2" class="resume-img">
+            </div>
+        </section>
         <section id="contact">
             <h2>Get in Touch</h2>
             <p>I am available for projects related to IT education, AI content creation, and technical support.</p>
