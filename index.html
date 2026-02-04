@@ -1,245 +1,491 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Nitin Kumar Kulkhandiya | Portfolio</title>
+
     <style>
+
         /* General Styles */
+
         body {
+
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
             margin: 0;
+
             padding: 0;
+
             color: #333;
+
             line-height: 1.6;
+
         }
+
         a { text-decoration: none; color: inherit; }
+
         
+
         /* Navigation */
+
         nav {
+
             background: #2c3e50;
+
             color: #fff;
+
             padding: 1rem 0;
+
             text-align: center;
+
             position: sticky; /* Menu stays at top */
+
             top: 0;
+
             z-index: 1000;
+
         }
+
         nav ul {
+
             padding: 0;
+
             list-style: none;
+
             margin: 0;
+
         }
+
         nav ul li {
+
             display: inline;
-            margin: 0 10px; /* Reduced margin slightly to fit more items */
+
+            margin: 0 10px;
+
         }
+
         nav a:hover { color: #f39c12; }
 
+
+
         /* Hero Section (Header) */
+
         header {
+
             background: linear-gradient(135deg, #1e90ff, #2ed573);
+
             color: white;
+
             padding: 60px 20px;
+
             text-align: center;
+
         }
+
         
+
         /* Profile Photo Style */
+
         .profile-photo {
-            width: 160px;       /* Width of photo */
-            height: 160px;      /* Height of photo */
-            border-radius: 50%; /* Makes it round */
-            border: 5px solid white; /* White border */
-            object-fit: cover;  /* Ensures photo doesn't stretch */
+
+            width: 160px;
+
+            height: 160px;
+
+            border-radius: 50%;
+
+            border: 5px solid white;
+
+            object-fit: cover;
+
             margin-bottom: 15px;
+
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
         }
+
+
 
         header h1 {
+
             margin: 0;
+
             font-size: 2.5rem;
+
             text-transform: uppercase;
+
             letter-spacing: 2px;
+
         }
+
         header p {
+
             font-size: 1.2rem;
+
             margin-top: 10px;
+
             font-weight: 300;
+
         }
+
+
 
         /* Container */
+
         .container {
+
             max-width: 1000px;
+
             margin: auto;
+
             padding: 20px;
+
         }
+
+
 
         /* Sections */
+
         section {
+
             padding: 40px 0;
+
             border-bottom: 1px solid #eee;
+
         }
+
         h2 {
+
             color: #2c3e50;
+
             border-left: 5px solid #1e90ff;
+
             padding-left: 15px;
+
             margin-bottom: 20px;
+
         }
+
+
 
         /* Skills Grid */
+
         .skills-grid {
+
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 20px;
+
         }
+
         .skill-card {
+
             background: #f4f4f4;
+
             padding: 20px;
+
             flex: 1 1 200px;
+
             border-radius: 8px;
+
             text-align: center;
+
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
         }
+
+
 
         /* Resume & Certificate Section Styles */
+
         .resume-container {
+
             text-align: center;
+
             background: #f9f9f9;
+
             padding: 20px;
+
             border-radius: 10px;
+
         }
+
         .resume-img {
+
             width: 100%;
-            max-width: 800px; /* Limits width so it's not too big on PC */
+
+            max-width: 800px;
+
             height: auto;
+
             margin-bottom: 20px;
+
             border: 1px solid #ddd;
+
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
         }
+
         
-        /* Specific style for certificate text */
+
         .cert-title {
+
             font-size: 1.2rem;
+
             color: #444;
+
             margin-bottom: 15px;
+
             font-weight: bold;
+
         }
+
+
 
         /* Contact Button */
+
         .btn {
+
             display: inline-block;
+
             background: #e74c3c;
+
             color: white;
+
             padding: 10px 20px;
+
             border-radius: 5px;
+
             margin-top: 20px;
+
             transition: background 0.3s;
+
         }
+
         .btn:hover { background: #c0392b; }
 
+
+
         /* Footer */
+
         footer {
+
             background: #333;
+
             color: white;
+
             text-align: center;
+
             padding: 20px 0;
+
             margin-top: 50px;
+
         }
+
     </style>
+
 </head>
+
 <body>
 
+
+
     <nav>
+
         <ul>
+
             <li><a href="#home">Home</a></li>
+
             <li><a href="#about">About</a></li>
+
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certificates</a></li> <li><a href="#resume">Resume</a></li>
+
+            <li><a href="#certifications">Certificates</a></li>
+
+            <li><a href="#resume">Resume</a></li>
+
             <li><a href="#contact">Contact</a></li>
+
         </ul>
+
     </nav>
 
+
+
     <header id="home">
+
         <img src="nitin.jpg" alt="Nitin Kumar Kulkhandiya" class="profile-photo">
+
         
+
         <h1>Nitin Kumar Kulkhandiya</h1>
+
         <p>ICT Lab Instructor | Tech Educator | Digital Creator</p>
+
     </header>
 
+
+
     <div class="container">
+
         
+
         <section id="about">
+
             <h2>About Me</h2>
+
             <p>
+
                 Hello! I am <strong>Nitin Kumar Kulkhandiya</strong> (also known as Nitin Patel). 
+
                 I am a passionate educator and technologist based in Madhya Pradesh. 
+
                 With a background in <strong>Computer Science (B.Sc.)</strong> and technical training (ITI Electrician), 
+
                 I currently work as an ICT Lab Instructor helping students master modern technology.
+
             </p>
+
             <p>
+
                 Beyond the classroom, I am deeply interested in <strong>Artificial Intelligence</strong>, 
+
                 creative content generation, and digital branding.
+
             </p>
+
         </section>
+
+
 
         <section id="skills">
+
             <h2>My Expertise</h2>
+
             <div class="skills-grid">
+
                 <div class="skill-card">
+
                     <h3>🖥️ Computer Science</h3>
+
                     <p>B.Sc. CS graduate with strong fundamentals in IT and software.</p>
+
                 </div>
+
                 <div class="skill-card">
+
                     <h3>🤖 AI & Creativity</h3>
+
                     <p>Expert in AI image generation, 3D styling, and prompt engineering.</p>
+
                 </div>
+
                 <div class="skill-card">
+
                     <h3>⚡ Technical Skills</h3>
+
                     <p>ITI Certified Electrician with practical hardware knowledge.</p>
+
                 </div>
+
                 <div class="skill-card">
+
                     <h3>📈 Digital Growth</h3>
+
                     <p>Experience in social media strategy and brand building (e.g., Kid_fluencer).</p>
+
                 </div>
+
             </div>
+
         </section>
+
+
 
         <section id="certifications">
+
             <h2>Certifications</h2>
+
             <div class="resume-container">
+
                 <p class="cert-title">Harvard College Project for Asian and International Relations</p>
+
                 
+
                 <img src="harvardcollegecertificate.jpg" alt="Harvard College Certificate" class="resume-img">
+
             </div>
-        </section>
-        <section id="resume">
-            <h2>My Resume</h2>
-            <p style="text-align: center; margin-bottom: 20px;">Here is my detailed professional resume.</p>
-            <div class="resume-container">
-                <img src="resume.pdf" alt="Nitin Resume Page 1" class="resume-img">
-                
-                
-            </div>
+
         </section>
 
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <p>I am available for projects related to IT education, AI content creation, and technical support.</p>
-            
-            <p><strong>Location:</strong> Shamgarh / Ajaypur, Madhya Pradesh</p>
-            
-            <p><strong>Phone:</strong> +91 96305-26554</p>
-            
-            <p><strong>Email:</strong> nitinmalviya051@gmail.com</p>
-            
-            <a href="mailto:nitinmalviya051@gmail.com" class="btn">Contact Me</a>
+
+
+        <section id="resume">
+
+            <h2>My Resume</h2>
+
+            <p style="text-align: center; margin-bottom: 20px;">Here is my detailed professional resume.</p>
+
+            <div class="resume-container">
+
+                <img src="resume1.jpg." alt="Nitin Resume Page 1" class="resume-img">
+
+                
+
+                <img src="resume2.jpg" alt="Nitin Resume Page 2" class="resume-img">
+
+            </div>
+
         </section>
+
+
+
+        <section id="contact">
+
+            <h2>Get in Touch</h2>
+
+            <p>I am available for projects related to IT education, AI content creation, and technical support.</p>
+
+            
+
+            <p><strong>Location:</strong> Shamgarh / Ajaypur, Madhya Pradesh</p>
+
+            
+
+            <p><strong>Phone:</strong> +91 96305-26554</p>
+
+            
+
+            <p><strong>Email:</strong> nitinmalviya051@gmail.com</p>
+
+            
+
+            <a href="mailto:nitinmalviya051@gmail.com" class="btn">Contact Me</a>
+
+        </section>
+
+
 
     </div>
 
+
+
     <footer>
+
         <p>&copy; 2026 Nitin Kumar Kulkhandiya. All Rights Reserved.</p>
+
     </footer>
 
+
+
 </body>
+
 </html>
