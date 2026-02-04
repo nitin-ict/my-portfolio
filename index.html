@@ -1,483 +1,146 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html lang="hi">
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Nitin Kumar Kulkhandiya | Portfolio</title>
-
+    <title>Nitin Kumar Kulkhandiya - Portfolio</title>
     <style>
-
-        /* General Styles */
-
+        /* बेसिक सेटिंग */
         body {
-
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
             margin: 0;
-
             padding: 0;
-
+            background-color: #f4f4f4;
             color: #333;
-
-            line-height: 1.6;
-
-            background-color: #f9f9f9;
-
         }
 
-        a { text-decoration: none; color: inherit; }
-
-        
-
-        /* Navigation */
-
-        nav {
-
-            background: #2c3e50;
-
-            color: #fff;
-
-            padding: 1rem 0;
-
-            text-align: center;
-
-            position: sticky;
-
-            top: 0;
-
-            z-index: 1000;
-
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-        }
-
-        nav ul {
-
-            padding: 0;
-
-            list-style: none;
-
-            margin: 0;
-
-        }
-
-        nav ul li {
-
-            display: inline;
-
-            margin: 0 15px;
-
-        }
-
-        nav a:hover { color: #f39c12; }
-
-
-
-        /* Hero Section */
-
+        /* हेडर डिजाइन */
         header {
-
-            background: linear-gradient(135deg, #1e90ff, #2ed573);
-
+            background-color: #2c3e50;
             color: white;
-
-            padding: 60px 20px;
-
+            padding: 40px 20px;
             text-align: center;
-
         }
-
-        
-
-        /* Profile Picture Style */
-
-        .profile-pic {
-
-            width: 160px;
-
-            height: 160px;
-
-            border-radius: 50%;
-
-            border: 5px solid white;
-
-            object-fit: cover; /* Ensures photo doesn't stretch */
-
-            margin-bottom: 20px;
-
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-
-            background-color: #fff; /* Fallback color if image missing */
-
-        }
-
-
 
         header h1 {
-
             margin: 0;
-
-            font-size: 2.5rem;
-
-            text-transform: uppercase;
-
-            letter-spacing: 2px;
-
+            font-size: 2.5em;
         }
 
         header p {
-
-            font-size: 1.2rem;
-
+            font-size: 1.2em;
             margin-top: 10px;
-
-            font-weight: 300;
-
-            opacity: 0.9;
-
+            color: #ecf0f1;
         }
 
-
-
-        /* Container */
-
+        /* मेन कंटेनर */
         .container {
-
             max-width: 1000px;
-
-            margin: auto;
-
-            padding: 20px;
-
+            margin: 20px auto;
             background: white;
-
-            box-shadow: 0 0 20px rgba(0,0,0,0.05);
-
-            margin-top: -30px; /* Overlap effect */
-
-            border-radius: 10px;
-
-            position: relative;
-
-        }
-
-
-
-        /* Sections */
-
-        section {
-
-            padding: 40px 0;
-
-            border-bottom: 1px solid #eee;
-
-        }
-
-        section:last-child { border-bottom: none; }
-
-        
-
-        h2 {
-
-            color: #2c3e50;
-
-            border-left: 5px solid #1e90ff;
-
-            padding-left: 15px;
-
-            margin-bottom: 30px;
-
-        }
-
-
-
-        /* Skills Grid */
-
-        .skills-grid {
-
-            display: flex;
-
-            flex-wrap: wrap;
-
-            gap: 20px;
-
-        }
-
-        .skill-card {
-
-            background: #fff;
-
-            border: 1px solid #eee;
-
             padding: 20px;
-
-            flex: 1 1 280px; /* Responsive width */
-
-            border-radius: 8px;
-
-            text-align: center;
-
-            transition: transform 0.3s, box-shadow 0.3s;
-
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        .skill-card:hover {
-
-            transform: translateY(-5px);
-
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-
-            border-color: #1e90ff;
-
+        /* सेक्शन डिजाइन */
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
         }
 
-        .skill-card h3 {
-
-            color: #1e90ff;
-
-            margin-top: 0;
-
+        .section h2 {
+            color: #2c3e50;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
         }
 
-
-
-        /* Contact Section */
-
-        .contact-info p {
-
-            font-size: 1.1rem;
-
-            margin: 10px 0;
-
+        /* रिज्यूमे इमेज स्टाइल (ताकि पूरा पेज दिखे) */
+        .resume-page {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: block;
         }
 
+        /* बटन डिजाइन */
         .btn {
-
             display: inline-block;
-
-            background: #e74c3c;
-
+            background-color: #3498db;
             color: white;
-
-            padding: 12px 25px;
-
+            padding: 10px 20px;
+            text-decoration: none;
             border-radius: 5px;
-
-            margin-top: 20px;
-
             font-weight: bold;
-
-            transition: background 0.3s;
-
+            margin-top: 10px;
         }
 
-        .btn:hover { background: #c0392b; }
-
-
-
-        /* Footer */
-
-        footer {
-
-            background: #333;
-
-            color: white;
-
-            text-align: center;
-
-            padding: 20px 0;
-
-            margin-top: 50px;
-
-            font-size: 0.9rem;
-
+        .btn:hover {
+            background-color: #2980b9;
         }
 
+        /* मोबाइल रिस्पॉन्सिव */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8em; }
+            .container { padding: 10px; width: 95%; }
+        }
     </style>
-
 </head>
-
 <body>
 
-
-
-    <nav>
-
-        <ul>
-
-            <li><a href="#home">Home</a></li>
-
-            <li><a href="#about">About</a></li>
-
-            <li><a href="#skills">Skills</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-
-        </ul>
-
-    </nav>
-
-
-
-    <header id="home">
-
-        <img src="nitin.jpg.jpeg" alt="Nitin Kumar Kulkhandiya" class="profile-pic">
-
-        
-
+    <header>
         <h1>Nitin Kumar Kulkhandiya</h1>
-
-        <p>ICT Lab Instructor | Web Developer | Tech Educator</p>
-
+        <p>ICT Lab Instructor | Ex-Jan Seva Mitra | Tech Enthusiast</p>
+        <p style="font-size: 0.9em;">📍 PM SHRI Govt. H. S. School, Ajaypur</p>
     </header>
-
-
 
     <div class="container">
 
-        
-
-        <section id="about">
-
+        <div class="section">
             <h2>About Me</h2>
-
             <p>
-
-                Hello! I am <strong>Nitin Kumar Kulkhandiya</strong> (also known as Nitin Patel). 
-
-                I am a dedicated and hard-working professional with a strong background in <strong>Computer Science (B.Sc.)</strong>.
-
+                नमस्ते, मैं नितिन कुमार कुलखंदिया हूँ। मेरे पास तकनीकी शिक्षा, कंस्ट्रक्शन इंजीनियरिंग और ऑफिस मैनेजमेंट का 5+ वर्षों का विविध अनुभव है। 
+                वर्तमान में, मैं अजयपुर में ICT इंस्ट्रक्टर के रूप में छात्रों को कंप्यूटर कौशल सिखा रहा हूँ। इससे पहले मैंने मध्य प्रदेश सरकार के साथ जन सेवा मित्र के रूप में कार्य किया है।
             </p>
+        </div>
 
-            <p>
+        <div class="section">
+            <h2>Work Experience Timeline</h2>
+            <ul>
+                <li><strong>2024 - Present:</strong> ICT Lab Instructor (PM SHRI School)</li>
+                <li><strong>2023 - 2024:</strong> Engineering Staff (Gupta Construction)</li>
+                <li><strong>2022 - 2023:</strong> Jan Seva Mitra (MP Govt. CMYIP)</li>
+                <li><strong>2021 - 2022:</strong> Engineering Staff (Shri Krishna Construction)</li>
+                <li><strong>2019 - 2020:</strong> Computer Operator (Offshore Infrastructure Ltd.)</li>
+            </ul>
+        </div>
 
-                Currently serving as an <strong>ICT Lab Instructor</strong>, I specialize in teaching technology, managing computer systems, and digital content creation. 
-
-                I am known for my leadership qualities and ability to solve complex technical problems.
-
-            </p>
-
-        </section>
-
-
-
-        <section id="skills">
-
-            <h2>My Skills & Expertise</h2>
-
-            <div class="skills-grid">
-
-                
-
-                <div class="skill-card">
-
-                    <h3>💻 Computer Expert</h3>
-
-                    <p>Advanced knowledge of Hardware, Software, Troubleshooting, and IT Systems.</p>
-
-                </div>
-
-                
-
-                <div class="skill-card">
-
-                    <h3>🌐 Web Developer</h3>
-
-                    <p>Designing and building websites using HTML, CSS, and modern web tools.</p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <h3>🤖 AI & Creativity</h3>
-
-                    <p>Expert in AI image generation, prompt engineering, and digital content creation.</p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <h3>👥 Team Leading</h3>
-
-                    <p>Experienced in managing teams, guiding students, and coordinating projects efficiently.</p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <h3>🗣️ Communication</h3>
-
-                    <p>Strong verbal and written communication skills for teaching and professional interaction.</p>
-
-                </div>
-
-
-
-                <div class="skill-card">
-
-                    <h3>⚡ Hard Working</h3>
-
-                    <p>Committed to excellence with a strong work ethic and attention to detail.</p>
-
-                </div>
-
-
-
-            </div>
-
-        </section>
-
-
-
-        <section id="contact">
-
-            <h2>Get in Touch</h2>
-
-            <div class="contact-info">
-
-                <p>I am available for development projects, training, and technical consultation.</p>
-
-                
-
-                <p><strong>📍 Location:</strong> Shamgarh / Ajaypur, Madhya Pradesh</p>
-
-                <p><strong>📞 Mobile:</strong> <a href="tel:+919630526554">+91 96305 26554</a></p>
-
-                <p><strong>📧 Email:</strong> <a href="mailto:nitinmalviya051@gmail.com">nitinmalviya051@gmail.com</a></p>
-
-            </div>
-
+        <div class="section" id="my-resume">
+            <h2>My Official Resume</h2>
+            <p>नीचे मेरा पूरा रिज्यूमे दिया गया है:</p>
             
+            <img src="resume-page-1.jpg" alt="Resume Page 1" class="resume-page">
+            
+            <img src="resume-page-2.jpg" alt="Resume Page 2" class="resume-page">
 
-            <a href="mailto:nitinmalviya051@gmail.com" class="btn">Send Email Now</a>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="resume.pdf" class="btn" download>Download Resume as PDF</a>
+            </div>
+        </div>
 
-        </section>
-
-
+        <div class="section" style="border-bottom: none;">
+            <h2>Contact Details</h2>
+            <p><strong>Phone:</strong> +91-9630526554</p>
+            <p><strong>Address:</strong> Village Kurawan, Tehsil Shamgarh, Dist. Mandsaur (M.P.)</p>
+        </div>
 
     </div>
 
-
-
-    <footer>
-
+    <footer style="text-align: center; padding: 20px; background: #333; color: white;">
         <p>&copy; 2026 Nitin Kumar Kulkhandiya. All Rights Reserved.</p>
-
     </footer>
 
-
-
 </body>
-
 </html>
